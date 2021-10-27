@@ -10,10 +10,16 @@
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <ScrollViewer>
         <TextBox Grid.Row="0" Name="logViewer"  TextWrapping="Wrap" Text="{Binding Path=Text}" Background="LightGray"/>
             </ScrollViewer>
         <Button Grid.Row="1" Content="Start"   VerticalAlignment="Top"  Click="StartFisherman"/>
+        <Button Grid.Row="2" Content="Stop"   VerticalAlignment="Top"  Click="StopFisherman"/>
+        <Button Grid.Row="3" Content="Set Boundaries"   VerticalAlignment="Top"  Click="SetBoundaries"/>
+        <Button Grid.Row="4" Content="Test"   VerticalAlignment="Top"  Click="TestClick"/>
     </Grid>
 </Window>
